@@ -1,19 +1,7 @@
 <!--index.vtl-->
-<h1>Task List!</h1>
-#if ($tasks)
-  <ul>
-    #foreach ($task in $tasks)
-      <li>$task.getDescription()</li>
-    #end
-  </ul>
-#else
-  <p> No tasks!</p>
-#end
-<p>Add a new Task:</p>
-<form action="/tasks" method="post">
-  <label for="description">Task Description</label>
-  <input type="text" name="description" id="description">
-  <button type="submit" name="submit">Submit</button>
-</form>
+<h1>Welcome to the To Do List Application</h1>
+
+<a href="/categories">View Category List</a>
+<a href="/categories/new">Add a new Category</a>
 
 <!--index.vtl-->
